@@ -1,0 +1,61 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Platform</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'works.css' %}">
+</head>
+<body class="tdstyle" background=""">
+<div class="navbar" align="center">
+  <a href="{% url 'home' %}">Home</a>
+  <a href="{% url 'platform'%}">PLATFORM</a>
+  <a href="{% url 'services'%}">SERVICES</a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT US
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'company' %}">company</a>
+      <a href="{% url 'cont' %}">contact</a>
+    </div>
+  </div>
+</div>
+<div id="container">
+  <div id="content">
+    <div id="about">
+      <h1>
+        <div style='float:left; margin-bottom:20px;'>
+       INERG SOLUTINS
+        </div>
+        <div class="stage">
+          <div class="pyramid3d">
+            <div class="triangle side1"></div>
+            <div class="triangle side2"></div>
+            <div class="triangle side3"></div>
+            <div class="triangle side4"></div>
+          </div>
+        </div>
+      </h1>
+      <h3 style='clear:both' class="subhead">
+        <a href="http://127.0.0.1:8000/services">Our Services</a> is Mobile applications,Marketing ,call center services,Social media,Corporate services and Create consultant services.
+      </h3>
+      <p id='pleft'>
+        you can communicate with our company head just go to <a href="https:http://127.0.0.1:8000/cont">contact</a> </p>
+      <p id='pright'>
+        Look for some of his workand experiments on <a href="https:https://www.w3schools.com/">W3school</a>, <a href="http://https://studygyaan.com/">study gyaan</a>
+      </p>
+      <ul>
+        <li><a href="https://www.inerg.com ">Our company website</a></li>
+        <li><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.047053505137!2d76.33044439999999!3d10.012972199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad997e70d6ad7858!2zMTDCsDAwJzQ2LjciTiA3NsKwMTknNDkuNiJF!5e0!3m2!1sen!2sin!4v1653237191268!5m2!1sen!2sin" width="1550" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                Company Google MAP</a></li>
+        <li><a href="https://www.manoramanews.com/">Spot News</a></li>
+      </ul>
+
+      <marquee>  For any enquery you can contact to this number: +919992367543 </marquee>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

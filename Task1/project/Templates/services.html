@@ -1,0 +1,183 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <link rel="stylesheet" type="text/css" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css''>
+</head>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.wrapper{
+    font-family: 'raleway';
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background:#fafafa;
+}
+.wrapper h1{
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(255,0,82);
+}
+
+.content-box{
+    display:flex;
+    justify-content: space-between
+    flex-wrap=wrap;
+    width:1000px;
+    margin-top:30px
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card i{
+    margin: 20px;
+    color: #ff5724
+}
+.card h2{
+    margin-bottom:12px;
+    font-weight:400;
+    text-align: center;
+}
+.card:hover h2{
+    font-weight: 500;
+    color : #f2f2f2;
+}
+
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                                rgba(255,28,8,0.7) 0%,
+                                rgba(255,0,82,0.7) 100%),
+                                url('image/p1.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                                rgba(255,28,8,0.7) 0%,
+                                rgba(255,0,82,0.7) 100%),
+                                url('image/p2.jpg');
+
+    background-size: cover;
+}
+
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                                rgba(255,28,8,0.7) 0%,
+                                rgba(255,0,82,0.7) 100%),
+                                url('image/p3.jpg');
+
+
+    background-size: cover;
+}
+
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+                                rgba(255,28,8,0.7) 0%,
+                                rgba(255,0,82,0.7) 100%),
+                                url('image/p4.jpg');
+    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+                                rgba(255,28,8,0.7) 0%,
+                                rgba(255,0,82,0.7) 100%),
+                                url('image/p5.jpg');
+    background-size: cover;
+}
+.card:nth-child(6):hover{
+    background: linear-gradient(45deg,
+                                rgba(255,28,8,0.7) 0%,
+                                rgba(255,0,82,0.7) 100%),
+                                url('image/p6.jpg');
+    background-size: cover;
+}
+@media(max-width:991px)
+{
+    .wrapper{
+        padding:25px;
+    }
+    .wrapper h1{
+        font-size: 2,5em;
+        font-weight:600;
+    }
+    .content-box{
+        flex-direction: column;
+        width:100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+
+</style>
+<body class="tdstyle" background="">
+<div class="navbar" align="center">
+  <a href="{% url 'home' %}">Home</a>
+  <a href="{% url 'platform'%}">PLATFORM</a>
+  <a href="{% url 'services'%}">SERVICES</a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT US
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'company' %}">company</a>
+      <a href="{% url 'cont' %}">contact</a>
+    </div>
+  </div>
+</div>
+    <div class="wrapper">
+        <h1>Our Services</h1>
+        <p>We offer the full spectrum of services to help organizations work better.</p>
+        <div class="content-box">
+            <div class="card">
+                <i class="bx bx-bar-chart-alt bx-md"></i>
+                <h2>Marketing service</h2>
+
+            </div>
+            <div class="card">
+                <i class="bx bx-mobile-alt bx-md"></i>
+                <h2>Mobile App service</h2>
+            </div>
+            <div class="card">
+                <i class="bx bx-line-chart-alt bx-md"></i>
+                <h2>Call centre Services</h2>
+            </div>
+            <div class="card">
+                <i class="bx bx-mail-send bx-md"></i>
+                <h2>Social Media service</h2>
+            </div>
+            <div class="card">
+                <i class="bx bx-bar-chart-alt bx-md"></i>
+                <h2>Corporate Business service</h2>
+            </div>
+            <div class="card">
+                <i class="bx bx-paint bx-md"></i>
+                <h2>Create consultant service</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

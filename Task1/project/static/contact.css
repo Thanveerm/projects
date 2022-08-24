@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Platform</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'plat.css' %}">
+</head>
+<body class="tdstyle" background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0XNEXvRbITdZ4klMAsuHvUkb_8pCvJBahg&usqp=CAU">
+<div class="navbar" align="center">
+  <a href="{% url 'home' %}">Home</a>
+  <a href="{% url 'platform'%}">PLATFORM</a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT US
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'company' %}">company</a>
+      <a href="{% url 'cont' %}">contact</a>
+    </div>
+  </div>
+</div>
+<h2 style="text-align:center"><b>Our Services </b></h2>
+<div class="row">
+  <div class="column" >
+    <div class="card" style="height:300" align="center">
+      <img src="{% static '/plat2.jpg'%}" alt="Jane" style="width:50%">
+        <div class="container">
+        <h2 align="center"></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column" >
+    <div class="card" style="height:300" align="center">
+      <img src="{% static '/plat5.jpg'%}" alt="Jane" style="width:50%">
+        <div class="container">
+        <h2 align="center"></h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

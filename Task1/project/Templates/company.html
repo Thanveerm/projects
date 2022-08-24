@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'company.css' %}">
+</head>
+<body class="tdstyle" background="https://media.istockphoto.com/photos/abstract-soft-wave-background-picture-id1399094999?k=20&m=1399094999&s=612x612&w=0&h=Bko-hjH1mXFELz-00BXTQ9pVvx3zahxB4U-2Qk0T_6U=">
+<div class="navbar" align="center">
+  <a href="{% url 'home' %}">Home</a>
+  <a href="{% url 'platform'%}">PLATFORM</a>
+  <a href="{% url 'services'%}">SERVICES</a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT US
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'company' %}">company</a>
+      <a href="{% url 'cont' %}">contact</a>
+    </div>
+  </div>
+</div>
+
+<h2 style="text-align:center"><b>OUR Company </b></h2>
+
+<div class="row">
+  <div class="column" >
+    <div class="card" style="height:300" align="center">
+      <img src="{% static '/comp1.jpg'%}" alt="Jane" style="width:50%">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.047053505137!2d76.33044439999999!3d10.012972199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad997e70d6ad7858!2zMTDCsDAwJzQ2LjciTiA3NsKwMTknNDkuNiJF!5e0!3m2!1sen!2sin!4v1653237191268!5m2!1sen!2sin" width="1550" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="container">
+        <h2 align="center"></h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

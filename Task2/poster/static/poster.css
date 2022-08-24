@@ -1,0 +1,62 @@
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body {
+  padding: 0;
+  background: #eee;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.frame {
+  position: relative;
+  width: 230px;
+  height: 80px;
+  padding: 6px;
+  background: #fff;
+  margin: 80px auto;
+}
+.shadow-top {
+  position: absolute;
+  left: -50px;
+	width: 0;
+	height: 0;
+	border-bottom: 366px solid #bbb;
+	border-left: 50px solid transparent;
+}
+.shadow-bottom {
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+	width: 0;
+	height: 0;
+	border-top: 20px solid #aaa;
+	border-left: 50px solid transparent;
+
+}
+
+.canvas {
+  padding: 10px;
+  width: 500px;
+  height: 600px;
+  background: #FC6E51;
+  box-shadow: inset -2px 2px 0 #777;
+}
+
+.workhard, .and, .benice {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.and {
+  font-size: 10px;
+}
+
+
+
+
